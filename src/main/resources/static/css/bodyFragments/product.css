@@ -1,0 +1,144 @@
+/* MAIN */
+
+.display-main .main {
+    background: #eff5f9;
+    display: flex;
+    justify-content: center;
+}
+
+.main .body-main {
+    width: 98%;
+    height: 90%;
+    margin-bottom: 20px;
+    background: white;
+    margin-top: 18px;
+    box-shadow: 0px 5px 10px #c0c5c8;
+    padding: 20px;
+    position: relative;
+    font-size: 13px;
+}
+
+.main .body-main h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main .body-main .from-find {
+    margin: 15px 0px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 17em;
+    height: 30px;
+}
+
+.main .body-main .from-find .input-search {
+    outline: none;
+    border: none;
+}
+
+.main .body-main .from-find .fa-search{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main .body-main .from-find div .fa-search {}
+
+.main .body-main .btn-search {
+    margin: 10px 0px;
+}
+
+.main .body-main .table-responsive {
+    height: 560px;
+}
+
+.main .body-main .table-responsive table{
+    width: 1062px;
+}
+
+.body-main .table-responsive tr {}
+
+.body-main .table-responsive tr td {
+
+
+}
+
+
+
+/* PAGEABLE */
+.body-main .pageable {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.body-main .pageable .pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #fff;
+    margin-left: -1px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    color: #4285F4;
+    background: #fff;
+}
+
+.pagination li:first-child a {
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px 0 0 6px;
+}
+
+.pagination li:last-child a {
+    -moz-border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.pagination a:hover {
+    background: #eee;
+}
+
+.pagination a.active {
+    cursor: default;
+    border-color: #4285F4;
+    background: #4285F4;
+    color: #fff;
+}
+
+.pagination a:active {
+    outline: none;
+}
+
+/* END_PAGEABLE */
+
+/* END_MAIN */
+
+/* END_DISPLAY_MAIN */
+
+/* FOOTER */
+#footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* END_FOOTER */

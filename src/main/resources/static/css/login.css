@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --form-background: #2121217e;
+    --color-main: #ffff00;
+    --font-main: 'M PLUS Rounded 1c', sans-serif;
+    --input-background: #505050;
+    --size-font: 18px;
+}
+
+body {
+    color: var(--color-main);
+    font-size: var(--size-font);
+}
+
+/* BACKGROUND */
+.img-background {
+    width: 100%;
+    background-size: cover;
+}
+
+.img-background .img-logo{
+    margin: auto;
+    padding: 15px 0;
+}
+
+.img-background .img-logo img{}
+/* END_BACKGROUND */
+
+/* FORM_LOGIN */
+.img-background .form-login{
+    margin: auto;
+    background: var(--form-background);
+    border-radius: 20px;
+}
+
+.img-background .form-login .title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    font-family: var(--font-main);
+}
+
+/* FROM_INPUT */
+.form-login .from-input {
+    width: 90%;
+    font-family: var(--font-main);
+    background: var(--input-background);
+    border: none;
+    color: white;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    margin: auto auto 1rem;
+}
+
+.form-login .from-input i{
+    color: var(--color-main);
+}
+
+.img-background .form-login .input-login{
+    width: 85%;
+    margin: auto;
+    font-family: var(--font-main);
+    background: var(--input-background);
+    border: none;
+    color: white;
+    padding-left: 20px;
+    outline: none;
+}
+
+input.input-login::-webkit-input-placeholder {
+    color: var(--color-main);
+    opacity: 0.8;
+}
+/* END_FORM_LOGIN */
+
+.img-background .form-login .forgot{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-main);
+    padding: 20px 0;
+}
+
+.img-background .form-login .btn-login {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.img-background .form-login .btn-login button{
+    font-family: var(--font-main);
+    width: 100%;
+    background: var(--color-main);
+    border-color: var(--color-main);
+    font-weight: 900;
+    font-size: 18px;
+}
+/* END_FROM_INPUT */
+
+@media (max-width: 355px) {
+    .form-login .from-input i{
+        display: none;
+    }
+}

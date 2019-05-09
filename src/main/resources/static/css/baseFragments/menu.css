@@ -1,0 +1,71 @@
+/* END_MENU_RIGHT */
+
+/* DISPLAY_MAIN */
+.display-main {
+    padding: 0px;
+    transition: 0.4s;
+}
+
+.display-main .pdt-10 {
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+/* BAR_TOP */
+.display-main .bar-top {
+    height: 50px;
+    background: #fed63f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.display-main .bar-top .infor-admin {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.bar-top .infor-admin .fa-user-circle {}
+
+.bar-top .infor-admin span {
+    padding: 0px 5px;
+}
+
+.bar-top .infor-admin .fa-angle-down {}
+
+.bar-top .infor-admin ul.user-menu {
+    position: absolute;
+    right: -5px;
+    top: 50px;
+    list-style: none;
+    width: 160px;
+    text-align: left !important;
+    background: white;
+    box-shadow: 0px 5px 10px #c0c5c8;
+}
+
+.bar-top .infor-admin ul.user-menu .user-menu-iteam {}
+
+.bar-top .infor-admin ul.user-menu .user-menu-iteam a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.display-main .bar-top .incon-bar {}
+
+.display-main .bar-top .incon-bar .fa-bars {}
+
+.display-main .bar-top .infor-page {}
+
+.display-main .bar-top .infor-page span {
+    padding-right: 50px;
+}
+
+/* END_BAR_TOP */

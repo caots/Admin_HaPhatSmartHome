@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--Login-->
+    <definition name="login" template="/WEB-INF/views/layouts/login.jsp"></definition>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/views/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/baseFragments/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/baseFragments/menu.jsp"/>
+        <put-attribute name="body" value=""/>
+    </definition>
+
+    <!-- Body Admin  -->
+    <definition name="homeAdmin" extends="base.definition">
+        <put-attribute name="title" value="Home Admin"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/home.jsp"/>
+    </definition>
+
+    <!-- Cart Page -->
+    <definition name="cart" extends="base.definition">
+        <put-attribute name="title" value="cart"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/cart.jsp"/>
+    </definition>
+
+    <!-- EMail Page -->
+    <definition name="sendMail" extends="base.definition">
+        <put-attribute name="title" value="email"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/sendMail.jsp"/>
+    </definition>
+
+
+    <!-- Product Page -->
+    <definition name="product" extends="base.definition">
+        <put-attribute name="title" value="product"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/products/product.jsp"/>
+    </definition>
+
+    <!-- Category Page -->
+    <definition name="bigCategory" extends="base.definition">
+        <put-attribute name="title" value="big category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/big_category.jsp"/>
+    </definition>
+    <definition name="mediumCategory" extends="base.definition">
+        <put-attribute name="title" value="medium category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/medium_category.jsp"/>
+    </definition>
+    <definition name="smallCategory" extends="base.definition">
+        <put-attribute name="title" value="small category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/small_category.jsp"/>
+    </definition>
+
+    <!-- Partner Page -->
+    <definition name="partner" extends="base.definition">
+        <put-attribute name="title" value="partner"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/products/partner.jsp"/>
+    </definition>
+
+    <!-- Company Page -->
+    <definition name="companyPage" extends="base.definition">
+        <put-attribute name="title" value="company"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/company/company.jsp"/>
+    </definition>
+
+    <!-- Request Price Page -->
+    <definition name="RequestPricePage" extends="base.definition">
+        <put-attribute name="title" value="request pricePage"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/form/requestPrice.jsp"/>
+    </definition>
+
+    <!-- Partner Page -->
+    <definition name="footerPage" extends="base.definition">
+        <put-attribute name="title" value="footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/footer/footer.jsp"/>
+    </definition>
+
+    <!-- Partner Page -->
+    <definition name="detailsFooterPage" extends="base.definition">
+        <put-attribute name="title" value="details footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/footer/detailsFooter.jsp"/>
+    </definition>
+
+
+    <!--================================ FORM_CREATE =========================-->
+    <!-- Product Page -->
+    <definition name="createProduct" extends="base.definition">
+        <put-attribute name="title" value="create product"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/changeProduct.jsp"/>
+    </definition>
+
+    <!--News  Product Page -->
+    <definition name="createNewsProduct" extends="base.definition">
+        <put-attribute name="title" value="create news product"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/createNewsProduct.jsp"/>
+    </definition>
+
+    <!--Info  Product Page -->
+    <definition name="createInfoProduct" extends="base.definition">
+        <put-attribute name="title" value="create info product"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/createInfoProduct.jsp"/>
+    </definition>
+
+
+    <!--Big Category Page -->
+    <definition name="createCategory" extends="base.definition">
+        <put-attribute name="title" value="create category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeCategory.jsp"/>
+    </definition>
+
+    <!-- partner Page -->
+    <definition name="createPartner" extends="base.definition">
+        <put-attribute name="title" value="create partner"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/changePartner.jsp"/>
+    </definition>
+
+    <!-- details footer Page -->
+    <definition name="createDetailsFooterPage" extends="base.definition">
+        <put-attribute name="title" value="create details footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/footer/changeDetailsFooter.jsp"/>
+    </definition>
+
+    <!-- News Footer Page -->
+    <definition name="createNewsFooter" extends="base.definition">
+        <put-attribute name="title" value="create news footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/footer/createNewsFooter.jsp"/>
+    </definition>
+
+    <!-- company Page -->
+    <definition name="createCompanyPage" extends="base.definition">
+        <put-attribute name="title" value="create company"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/company/changeCompany.jsp"/>
+    </definition>
+
+    <!--================================ FORM_ UPDATE =========================-->
+    <!--Update Category Page -->
+    <definition name="updateCategory" extends="base.definition">
+        <put-attribute name="title" value="update category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeCategory.jsp"/>
+    </definition>
+
+    <!--Update Product Page -->
+    <definition name="updateProduct" extends="base.definition">
+        <put-attribute name="title" value="update product"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/changeProduct.jsp"/>
+    </definition>
+
+    <!-- Update partner Page -->
+    <definition name="updatePartner" extends="base.definition">
+        <put-attribute name="title" value="update partner"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/products/changePartner.jsp"/>
+    </definition>
+
+    <!-- Update company Page -->
+    <definition name="updateCompanyPage" extends="base.definition">
+        <put-attribute name="title" value="update company"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/company/changeCompany.jsp"/>
+    </definition>
+
+    <!-- Update Footer Page -->
+    <definition name="updateFooterPage" extends="base.definition">
+        <put-attribute name="title" value="update footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/footer/changeFooter.jsp"/>
+    </definition>
+
+    <!-- Update Details Footer Page -->
+    <definition name="updateDetailsFooterPage" extends="base.definition">
+        <put-attribute name="title" value="update details footer"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/footer/changeDetailsFooter.jsp"/>
+    </definition>
+
+</tiles-definitions>

@@ -1,0 +1,44 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.form-product {
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+.name-and-partner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.myInput {
+    width: 28% !important;
+}
+
+.myInput p{
+    font-size: 18px;
+}
+
+.double-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#image {
+    width: 100%;
+    /* border: solid black 1px; */
+}
+.submit {
+    margin-top: 10px;
+    text-align: center;
+}

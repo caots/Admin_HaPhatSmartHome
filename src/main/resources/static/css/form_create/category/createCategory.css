@@ -1,0 +1,22 @@
+:root {
+    --font_size_title: 36px;
+    --font_family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font_size_content: 18px;
+}
+
+.create-category {
+    margin-top: 20px;
+    font-size: var(--font_size_content);
+}
+.create-category .category {
+    padding-top: 10px;
+}
+.btn {
+    margin-top: 30px;
+}
+
+.create-category  h1{
+    font-size: var(--font_size_title);
+    font-weight: 600;
+    color: #007bff;
+}
